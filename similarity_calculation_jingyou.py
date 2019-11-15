@@ -833,9 +833,9 @@ class Doc_most_sim():
         return result_content
 if __name__=='__main__':
     handle=Doc_most_sim()
-    with open('data1/jingyou_cxpp_out2.csv','w',encoding='utf-8') as writer:
+    with open('data1/jingyou_cxpp_out.csv','w',encoding='utf-8') as writer:
         # results=[]
-        for i, line in enumerate(open('data1/jingyou_cxpp_wpp.csv', encoding='utf-8')):
+        for i, line in enumerate(open('data1/jingyou_cxpp.csv', encoding='utf-8')):
             content =line.strip()
             #print(content)
             start_time = datetime.now()
