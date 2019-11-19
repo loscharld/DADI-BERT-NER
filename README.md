@@ -53,8 +53,6 @@
     - kbqa_test.py
 	
     ***基于BERT的车型相似度计算
-	-bert-serving安装 参考网址 https://www.jianshu.com/p/973822fea15f
-	-打开一个终端  bert-serving-start -model_dir D:\code\DADI-BERT-NER\ModelParams\chinese_L-12_H-768_A-12/ -num_worker=1
 	-construct_dataset.py  生成NER_Data的数据
 	ModelParams文件夹需要下载BERT的中文配置文件：chinese_L-12_H-768_A-12
     Output文件夹存放输出的数据
@@ -80,7 +78,9 @@
       --clip=5
       车型相似度匹配
       数据库为MongoDB
-    - similarity_calculation_jingyou.py \
+    -bert-serving安装 参考网址 https://www.jianshu.com/p/973822fea15f
+	-打开一个终端  bert-serving-start -model_dir D:\code\DADI-BERT-NER\ModelParams\chinese_L-12_H-768_A-12/ -num_worker=1
+    - bert_similarity_calculation_jingyou.py \
       --task_name=ner \
       --data_dir=./Data/CHEXI_NER_Data \
       --vocab_file=./ModelParams/chinese_L-12_H-768_A-12/vocab.txt \
